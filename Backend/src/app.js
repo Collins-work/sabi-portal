@@ -11,15 +11,10 @@ const profile = require('./routes/profile.routes')
 const errorHandler = require('./middlewares/error.middleware')
 const app = express()
 
-const corsOption = {
-    origin: ['http://localhost:5173', 'https://sabi-portal.up.railway.app','https://sabimfb.com'],
-    optionsSuccessStatus: 200
-};
-
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(helmet())
-app.use(cors(corsOption))
+app.use(cors())
 
 app.use('/api', index)
 app.use('/api', department)

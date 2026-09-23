@@ -2,8 +2,8 @@ const express = require('express')
 const controller = require('../controllers/departments.controller')
 const router = express.Router()
 
-router.get('/departments', controller.getDepartments)
-router.post('/departments', controller.createDepartment)
+router.get('/departments',auth, controller.getDepartments)
+router.post('/departments',auth, controller.createDepartment)
 router.delete('/departments/:id', controller.deleteDepartment)
 
 
