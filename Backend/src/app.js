@@ -12,7 +12,7 @@ const errorHandler = require('./middlewares/error.middleware')
 const app = express()
 
 const corsOption = {
-    origin: ['http://localhost:5173', 'https://desirable-alignment-production-267d.up.railway.app','https://sabimfb.com'],
+    origin: ['http://localhost:5173', 'https://sabi-portal.up.railway.app','https://sabimfb.com'],
     optionsSuccessStatus: 200
 };
 
