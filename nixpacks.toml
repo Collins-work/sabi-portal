@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["nodejs_22"]
+
+[phases.install]
+cmds = ["npm --prefix Backend ci"]
+
+[start]
+cmd = "npm --prefix Backend start"
