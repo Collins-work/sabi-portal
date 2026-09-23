@@ -2,7 +2,7 @@
 nixPkgs = ["nodejs_22"]
 
 [phases.install]
-cmds = ["npm --prefix Backend ci"]
+cmds = ["npm ci"]
 
 [start]
-cmd = "npm --prefix Backend start"
+cmd = "npm start"
